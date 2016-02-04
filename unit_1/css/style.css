@@ -1,7 +1,32 @@
 body {
-	background-color: white;
+	background-color: #D9AE42;
+	text-align: center;
 }
 
-h1, p {
-	color: green;
+h3 {
+	color: #1E257E;
+	font: "Courier New", monospace;
+	font-size: 24px;
+}
+
+p {
+	color: #4B6929;
+	font-family: "Arial";
+	text-transform: lowercase;
+}
+
+a {
+	color: white;
+	font: Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.important {
+	color: blue;
+}
+
+nav {
+	text-decoration: none;
 }
