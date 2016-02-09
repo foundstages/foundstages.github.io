@@ -102,10 +102,10 @@ ul {
 img {
 	max-width: 150px;
 }
-
-
-
-
-
-
-
+.clearfix:after {
+	clear:both;
+	display:block;
+	height:0;
+	content:".";
+	visibility:hidden;
+}
