@@ -13,6 +13,11 @@ nav {
     border: 1px black solid;
     padding: 20px;
 }
+main {
+    background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}
 article {
     background-color: #E89C6C;
     border: 1px black solid;
@@ -27,4 +32,26 @@ section {
     background-color: #FFE2B8;
     border: 1px black solid;
     padding: 20px;
+}
+.clearfix:after {
+    clear:both;
+    display:block;
+    height:0;
+    content:".";
+    visibility:hidden;
+}
+#development {
+    background-color: #E582A2;
+    float: left;
+    width: 33.33%;
+}
+#news {
+    background-color: #E55B88;
+    float: left;
+    width: 33.33%;
+}
+#history {
+    background-color: #E582A2;
+    float: left;
+    width: 33.33%;
 }
