@@ -1,12 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300italic,300&subset=latin,latin-ext);
+@font-face {
+    font-family: 'Glowist';
+    src: url(../fonts/Glowist.woff);
+}
 * {
-	margin:0; 
-	padding:0; 
-	box-sizing:border-box; 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+    text-align: center;
+}
+img {
+    width: 100%;
 }
 header {
+    width: 100%;
     background-color: #FFED74;
     border: 1px black solid;
     padding: 20px;
+}
+header nav {
+    text-align: center;
+}
+header nav a {
+    display: inline-block;
+    vertical-align: middle;
+/*    max-height: 10vh;*/
+    margin: 0 2em;
+    color: red;
 }
 nav {
     background-color: #E8C66A;
@@ -14,25 +38,37 @@ nav {
     padding: 20px;
 }
 main {
-    background-color: #FFB7CF;
+    background-color: #FFC675;
     border: 1px black solid;
     padding: 20px;
+    text-align: center;
 }
-article {
+#current-show {
+    background-image: url("../images/lander.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+#current-show section {
+    float: left;
+    margin-left: 4em;
+}
+section {
     background-color: #E89C6C;
     border: 1px black solid;
     padding: 20px;
 }
-footer {
-    background-color: #FF957E;
-    border: 1px black solid;
-    padding: 20px;
-}
-section {
+div {
     background-color: #FFE2B8;
     border: 1px black solid;
     padding: 20px;
 }
+/*h1, h2, h3, h4, p, a {
+    background-color: #E55B88;
+    border: 1px black solid;
+    padding: 20px;
+}*/
 .clearfix:after {
     clear:both;
     display:block;
@@ -40,19 +76,126 @@ section {
     content:".";
     visibility:hidden;
 }
-#development {
-    background-color: #E582A2;
-    float: left;
-    width: 33.33%;
+.clearboth {
+    clear: both;
 }
-#news {
-    background-color: #E55B88;
+.column3 {
     float: left;
-    width: 33.33%;
+    width: 25em;
+    height: 25em;	
+    padding: 1em;
 }
-#history {
-    background-color: #E582A2;
+.column3 img {
+    max-width: 600px;
+    margin: auto;
+}
+.column2 {
     float: left;
-    width: 33.33%;
+    width: 35.5em;
+    padding: .25em;
+    margin: 1em;
 }
+.column2 figure {
+    float: left;
+    width: 17.5em;
+    padding: .5em;
+}
+.column2 > img {
+    max-width: 268px;
+}
+.column2 p {
+    height: 17.5em;
+    vertical-align: middle;
+}
+.people {
+    float: left;
+    width: 40em;
+}
+.people img {
+    max-width: 540px;
+}
+.people div {
+    float: left;
+    width: 20em;
+}
+.nav-social a {
+    display: inline-block;
+    width: 100px;
+}
+.nav-social a img {
+    max-width: 128px;
+}
+.wrapper {
+    width: 75em;
+    margin: auto;
+}
+.wrap-lg {
+    width: 100%;
+}
+#slideshow > img {
+    max-width: 1600px;
+}
+figcaption {
+    font-size: .75em;
+}
+figcaption .lesser {
+    font-size: .75em;
+}
+form {
+    background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+}
+form .label {
+    float: left;
+    width: 40%;
+}
+form .button {
+    float: right;
+    width: 20%;
+}
+form div label {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: .25em 0; 
+}
+form div input {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 1.5em;
+    padding: .25em;
+    border: 1px solid black;
+    border-radius: .25em;
+}
+form div button {
+    display: block;
+    margin: auto;
+/*    font-size: 2em;*/
+    font-weight: 600;
+    padding: .5em;
+    border: 1px solid black;
+/*    border-radius: .5em;*/
+}
+footer {
+    background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+#nav-social-footer a {
+    width: 60px;
+}
+#copyright {
+    float: left;
+}
+#email {
+    float: right;
+}
+
+
+
+
 
