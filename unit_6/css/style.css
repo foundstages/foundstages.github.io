@@ -18,10 +18,10 @@ img {
     width: 100%;
 }
 header {
-    background-image: url("../images/lander.jpg");
+    background-image: url("../images/lander1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     height: 100vh;
 }
 header nav {
@@ -36,7 +36,7 @@ header nav a {
     text-decoration: none;
 }
 header nav a:hover {
-    font-style: italic;
+    text-decoration: underline;
     color: #5C7936;
 }
 #current-show {
@@ -46,8 +46,11 @@ header nav a:hover {
     background-color: rgba(245,245,245,.8);
     font-size: 1.5em;
 }
-#current-show p {
+#current-show h2 {
     color: #2B3990;
+}
+#current-show p {
+    color: #5C7936;
 }
 h1, h2 {
     font-family: 'Glowist', cursive, serif;
@@ -56,6 +59,7 @@ h1, h2 {
 }
 h1 {
     font-size: 3em;
+    color: #2B3990;
 }
 h3 {
     color: #2B3990;
@@ -65,66 +69,70 @@ h4 {
 }
 main {
     background-color: #fff;
-    margin: 3em 0;
+    margin: 3em 0 2em;
 }
 main section {
     float: left;
-    width: 33.33%;
+    width: 32.33%;
     height: 25em;	
     padding: 1em;
+    margin: 0 .5%;
 }
-main section:hover {
+/*main section:hover {
     background-color: #E1BA4F;
-}
+}*/
 main section img {
     max-width: 600px;
     margin: auto;
 }
-#process-section {
+main section p {
+    text-align: justify;
+}
+#gallery {
     background-image: url("../images/bg1.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
 }
-.process {
+.gallery-album {
     width: 62.5em;
     margin: 0 auto 8em;
     padding: 1.25em;
     background-color: rgba(245,245,245,.7);
 }
-#process-section h2 {
-    margin-bottom: 1em;
-    padding-top: 4em; 
-}
-.process figure {
+.gallery-album figure {
     margin: 0 0 1em;
 }
-.process figure:first-child {
+.gallery-album figure:first-child {
     margin-top: 1.5em;
 }
-.process figure figcaption {
+.gallery-album figure figcaption {
     padding: 0 2.5em;
 }
-.process figure img {
+.gallery-album figure img {
     max-height: 268px;
     float: left;
     width: 25%;
     padding: 1.5em;
 }
-.process figure img:hover {
+/*.gallery-album figure img:hover {
     background-color: #fff;
+}*/
+#gallery h2 {
+    margin-bottom: 1em;
+    padding-top: 4em; 
 }
-#process-section nav {
+#gallery nav {
     background-color: #E1BA4F;
 }
-#process-section nav a {
+#gallery nav a {
     width: 6em;
 }
 .people {
     width: 95%;
     margin: auto;
-    padding: 4em 0 2em;
+    padding: 2em 0 2em;
 }
 .people img {
     max-width: 540px;
@@ -132,9 +140,12 @@ main section img {
 }
 .people figure {
     float: left;
-    width: 18%;
-    margin: 1%;
+    width: 16%;
+    margin: 2%;
     padding: .5em;
+}
+.people figure figcaption {
+    text-align: justify;
 }
 footer {
     background-image: url("../images/bg2.jpg");
@@ -192,9 +203,9 @@ form div input {
     border: 1px solid black;
     border-radius: .25em;
 }
-form div input:hover {
+/*form div input:hover {
     background-color: rgba(255,255,255,1);
-}
+}*/
 form button {
     float: right;
     margin-right: 5%;
@@ -207,9 +218,9 @@ form button {
     height: 3.5em;
     width: 3.5em;
 }
-form button:hover {
+/*form button:hover {
     background-color: rgba(255,255,255,1);
-}
+}*/
 footer nav {
     background-color: rgba(225, 186, 79, .7);
 }
