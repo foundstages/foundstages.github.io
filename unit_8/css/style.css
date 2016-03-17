@@ -40,8 +40,7 @@ header nav a:hover {
     text-decoration: underline;
     color: #5C7936;
 }
-#current-show {/*
-    width: 28em;*/
+#current-show {
     margin: 5em auto 4em;
     padding: 2em;
     background-color: rgba(245,245,245,.8);
@@ -362,6 +361,68 @@ footer p, a {
         font-size: 1em;
         margin: 0 .5em;
     }
+    #current-show {
+        background-color: rgba(245,245,245,.8);
+        font-size: 1em;
+    }
+    main section {
+        width: 100%;  
+        padding: 2em;
+    }
+    #gallery {
+        background-image: none;
+        background-color: #5C7936;
+    }
+    .gallery {
+        padding: 0;
+        background-color: inherit;
+    }
+    #gallery h2 {
+        padding: .25em; 
+        margin: .5em auto 0;
+    }
+    #gallery nav {
+        display: none;
+    }
+    .gallery figure {
+        margin: 0;
+    }
+    .gallery figure:first-child {
+        margin: 0 auto;
+    }
+    .gallery figure figcaption {
+        display: none;
+    }
+    .gallery figure img {
+        width: 45%;
+        padding: 1em;
+        margin: 2.5%;
+    }
+    #people {
+        display: none;
+    }
+    footer figure {
+        display: none;
+    }
+    footer h2 {
+        font-size: 1.5em;
+    }
+    #copyright, #email {
+        float: none;
+        text-align: center;
+    }
 }
-
+@media only screen and (max-width: 25em) {
+    h1 {
+        font-size: 1.5em;
+    }
+    #gallery h2 {
+        font-size: 1.5em;
+    }
+    .gallery figure img {
+        width: 50%;
+        padding: 1em;
+        margin: 0;
+    }
+}
 
