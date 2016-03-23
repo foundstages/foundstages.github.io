@@ -4,29 +4,34 @@
 	<title>Found Stages</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
 </head>
 <body>
 	<header>
 		<nav id="nav-bar">
 			<a href="#shows">Shows</a>
 			<a href="#gallery">Gallery</a>
-			<a id="home" href="#current-show">
+			<a id="home" href="#lander">
 				<img alt="Found Stages Logo" src="images/logo.png">
 			</a>
 			<a href="#people">About</a>
 			<a href="#contact">Contact</a>
 		</nav>
-		<div class="wrapper-mini">	
-			<section id="current-show">
-				<h2>Roman Candle Summer</h2>
-				<p>Touring metro Atlanta August-September 2016</p>
-				<p>Now seeking locations!</p>
-			</section>
-			<h1 class="clearboth">New Plays, No Walls</h1>
-		</div>
 	</header>
-	<main id="shows"> 
-		<div class="wrapper clearfix">
+	<main> 
+		<div id="lander">	
+			<div class="wrapper-mini">
+				<section id="current-show">
+					<h2>Roman Candle Summer</h2>
+					<p>Touring metro Atlanta August-September 2016</p>
+					<p>Now seeking locations!</p>
+				</section>
+				<h1>New Plays, No Walls</h1>
+			</div>
+		</div>
+		<div class="wrapper clearfix" id="shows">
 			<section>
 				<img alt="backyard swimming pool" src="images/main-current.jpg">
 				<h3>Happening Now</h3>
@@ -43,82 +48,86 @@
 				<p>Since 2014, we’ve partnered with Atlanta-area organizations to create site-specific plays for a wide range of audiences - some experiencing theatre for the first time.</p>
 			</section>
 		</div>
+		<section id="gallery">
+			<div class="wrapper-med">
+				<h2>Pics from Our Process</h2>
+				<div class="process-pics">
+					<figure class="clearfix">
+						<figcaption>We're currently developing a new project through the Reiser Atlanta Artists Lab at the Alliance Theatre. Three applications by Atlanta-based artists are chosen each year to receive a $10,000 development grant and support from Alliance staff. <span class="bold"><em>Third Council of Lyon</em> will be showcased on the Hertz Stage on April 30 and May 1 at 7:00 p.m.</span></figcaption>
+						<a class="fancybox" rel="fancy-album" href="images/3rdcouncil-fancy1.jpg"><img src="images/3rdcouncil1.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/3rdcouncil-fancy2.jpg"><img src="images/3rdcouncil2.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/3rdcouncil-fancy3.jpg"><img src="images/3rdcouncil3.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/3rdcouncil-fancy4.jpg"><img src="images/3rdcouncil4.jpg"></a>
+					</figure>
+					<figure class="clearfix">
+						<figcaption>Audiences shared tea, cookies and a game of Mah Jong with characters in an intimate setting in <em>The Joy Luck Club Experience</em> at 7 Stages Theatre, October 2015.</figcaption>
+						<a class="fancybox" rel="fancy-album" href="images/joyluck-fancy1.jpg"><img src="images/joyluck1.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/joyluck-fancy2.jpg"><img src="images/joyluck2.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/joyluck-fancy3.jpg"><img src="images/joyluck3.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/joyluck-fancy4.jpg"><img src="images/joyluck4.jpg"></a>
+					</figure>
+					<figure class="clearfix">
+						<figcaption><em>Beulah Creek</em>, our innagural production in September 2014, took audiences on a journey with its characters to four locations throughout Dunwoody Nature Center. The script was nominated for a Suzi Bass Award.</figcaption>
+						<a class="fancybox" rel="fancy-album" href="images/beulah-fancy1.jpg"><img src="images/beulah1.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/beulah-fancy2.jpg"><img src="images/beulah2.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/beulah-fancy3.jpg"><img src="images/beulah3.jpg"></a>
+						<a class="fancybox" rel="fancy-album" href="images/beulah-fancy4.jpg"><img src="images/beulah4.jpg"></a>
+					</figure>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$(".fancybox").fancybox();
+				});
+			</script>
+			<nav class="nav-social">
+				<a target="_blank" href="https://www.facebook.com/foundstagestheater/"><img alt="Found Stages Facebook Page" title="Like Us!" src="images/icon-facebook.png"></a>
+				<a target="_blank" href="https://twitter.com/foundstages"><img alt="Found Stages Twitter" title="Tweet Us!" src="images/icon-twitter.png"></a>
+				<a target="_blank" href="https://www.instagram.com/found_stages/"><img alt="Found Stages Instagram" title="Follow Us!" src="images/icon-instagram.png"></a>
+			</nav>
+		</section>
+		<section id="people" class="people clearfix">
+			<figure>
+				<img alt="Neeley Gossett Headshot" src="images/ppl-neeley.jpg">
+				<h3>Neeley Gossett</h3>
+				<h4>Co-Founder</h4>
+				<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</figcaption>
+			</figure>
+			<figure>
+				<img alt="Nichole Palmietto Headshot" src="images/ppl-nichole.jpg">
+				<h3>Nichole Palmietto</h3>
+				<h4>Co-Founder</h4>
+				<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</figcaption>
+			</figure>
+			<figure>
+				<img alt="Annie Harrison Elliott Headshot" src="images/ppl-annie.jpg">
+				<h3>Annie Harrison Elliott</h3>
+				<h4>Artistic Associate</h4>
+				<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</figcaption>
+			</figure>
+			<figure>
+				<img alt="Addae Moon Headshot" src="images/ppl-addae.jpg">
+				<h3>Addae Moon</h3>
+				<h4>Artistic Associate</h4>
+				<figcaption>Addae Moon is an Atlanta based playwright, dramaturg, director and teaching artist. He is an alum of the Professional Playwriting Program at Ohio University and has worked locally with 7Stages, Horizon Theatre Company, Alliance Theatre and Working Title Playwrights.  He is the Director of Museum Theatre at the Atlanta History Center.</figcaption>
+			</figure>
+			<figure>
+				<img alt="Kara Procell Headshot" src="images/ppl-kara.jpg">
+				<h3>Kara Procell</h3>
+				<h4>Production Manager</h4>
+				<figcaption>When she's not working for Found Stages, Kara is a freelance stage manager, working mainly with Alliance Theatre and Dad's Garage Theatre Company. Additionally, she is a script supervisor on the web series Quarter Life and holds a BFA from Catawba College.</figcaption>
+			</figure>
+		</section>
 	</main>	
-	<section id="gallery">
-		<h2>Pics from Our Process</h2>
-		<div class="gallery wrapper-med">
-			<figure class="clearfix">
-				<figcaption>We're currently developing a new project through the Reiser Atlanta Artists Lab at the Alliance Theatre. Three applications by Atlanta-based artists are chosen each year to receive a $10,000 development grant and support from Alliance staff. <span class="bold"><em>Third Council of Lyon</em> will be showcased on the Hertz Stage on April 30 and May 1 at 7:00 p.m.</span></figcaption>
-				<img src="images/3rdcouncil1.jpg">
-				<img src="images/3rdcouncil2.jpg">
-				<img src="images/3rdcouncil3.jpg">
-				<img src="images/3rdcouncil4.jpg">
-			</figure>
-			<figure class="clearfix">
-				<figcaption>Audiences shared tea, cookies and a game of Mah Jong with characters in an intimate setting in <em>The Joy Luck Club Experience</em> at 7 Stages Theatre, October 2015.</figcaption>
-				<img src="images/joyluck1.jpg">
-				<img src="images/joyluck2.jpg">
-				<img src="images/joyluck3.jpg">
-				<img src="images/joyluck4.jpg">
-			</figure>
-			<figure class="clearfix">
-				<figcaption><em>Beulah Creek</em>, our innagural production in September 2014, took audiences on a journey with its characters to four locations throughout Dunwoody Nature Center. The script was nominated for a Suzi Bass Award.</figcaption>
-				<img src="images/beulah1.jpg">
-				<img src="images/beulah2.jpg">
-				<img src="images/beulah3.jpg">
-				<img src="images/beulah4.jpg">
-			</figure>
-		</div>
-		<nav class="nav-social">
-			<a target="_blank" href="https://www.facebook.com/foundstagestheater/"><img alt="Found Stages Facebook Page" title="Like Us!" src="images/icon-facebook.png"></a>
-			<a target="_blank" href="https://twitter.com/foundstages"><img alt="Found Stages Twitter" title="Tweet Us!" src="images/icon-twitter.png"></a>
-			<a target="_blank" href="https://www.instagram.com/found_stages/"><img alt="Found Stages Instagram" title="Follow Us!" src="images/icon-instagram.png"></a>
-		</nav>
-	</section>
-	<section id="people" class="people clearfix">
-		<figure>
-			<img alt="Neeley Gossett Headshot" src="images/ppl-neeley.jpg">
-			<h3>Neeley Gossett</h3>
-			<h4>Co-Founder</h4>
-			<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</figcaption>
-		</figure>
-		<figure>
-			<img alt="Nichole Palmietto Headshot" src="images/ppl-nichole.jpg">
-			<h3>Nichole Palmietto</h3>
-			<h4>Co-Founder</h4>
-			<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</figcaption>
-		</figure>
-		<figure>
-			<img alt="Annie Harrison Elliott Headshot" src="images/ppl-annie.jpg">
-			<h3>Annie Harrison Elliott</h3>
-			<h4>Artistic Associate</h4>
-			<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</figcaption>
-		</figure>
-		<figure>
-			<img alt="Addae Moon Headshot" src="images/ppl-addae.jpg">
-			<h3>Addae Moon</h3>
-			<h4>Artistic Associate</h4>
-			<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</figcaption>
-		</figure>
-		<figure>
-			<img alt="Kara Procell Headshot" src="images/ppl-kara.jpg">
-			<h3>Kara Procell</h3>
-			<h4>Production Manager</h4>
-			<figcaption>When she's not working for Found Stages, Kara is a freelance stage manager, working mainly with Alliance Theatre and Dad's Garage Theatre Company. Additionally, she is a script supervisor on the web series Quarter Life and holds a BFA from Catawba College.</figcaption>
-		</figure>
-	</section>
 	<footer class="clearfix">
 		<figure class="wrapper">
 			<img src="images/slide1.jpg">
