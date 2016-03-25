@@ -17,6 +17,10 @@ body {
 img {
     width: 100%;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 header {
     height: 15vh;
 }
@@ -30,7 +34,6 @@ header nav a {
     margin: 0 1em;
     color: #2B3990;
     font-size: 1.5em;
-    text-decoration: none;
 }
 header nav a:hover {
     text-decoration: underline;
@@ -85,16 +88,18 @@ h4 {
     width: 75em;
     margin: auto;
 }
+#shows {
+    padding: 1em 0;
+}
 #shows section{
     float: left;
-    width: 32.33%;
+    width: 33.33%;
     height: 25em;	
     padding: 1em;
-    margin: .5%;
 }
-/*main section:hover {
+#shows section:hover {
     background-color: #E1BA4F;
-}*/
+}
 #shows section img {
     max-width: 600px;
     margin: auto;
@@ -108,11 +113,11 @@ h4 {
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
+    padding: 8em 0;
 }
 .wrapper-med {
     width: 62.5em;
     margin: auto;
-    padding: 8em 0;
 }
 #gallery h2 {
     margin-bottom: 1em;
@@ -139,10 +144,10 @@ h4 {
 .nav-social a img {
     max-width: 128px;
 }
-#gallery nav {
+#gallery-share {
     background-color: #E1BA4F;
 }
-#gallery nav a {
+#gallery-share a {
     width: 6em;
 }
 .people {
@@ -185,7 +190,7 @@ footer figure img {
 }
 footer h2 {
     margin-top: 3em;
-    margin-bottom: 40vh;
+    margin-bottom: 6em;
 }
 .wrapper-sm {
     width: 50em;
@@ -222,9 +227,6 @@ form div input {
     border: 1px solid black;
     border-radius: .25em;
 }
-/*form div input:hover {
-    background-color: rgba(255,255,255,1);
-}*/
 form button {
     float: right;
     margin-right: 5%;
@@ -237,18 +239,12 @@ form button {
     height: 3.5em;
     width: 3.5em;
 }
-/*form button:hover {
-    background-color: rgba(255,255,255,1);
-}*/
 footer nav {
     background-color: rgba(225, 186, 79, .7);
 }
 footer nav a {
     width: 4em;
     margin: .25em;
-}
-footer p, a {
-    color: #E1BA4F;
 }
 #location {
     margin: 2em 0;
@@ -259,6 +255,11 @@ footer p, a {
 }
 #email {
     float: right;
+    text-decoration: underline;
+}
+footer p, #email {
+    color: #E1BA4F;
+    text-align: center;
 }
 .bold {
     font-weight: 600;
@@ -269,6 +270,47 @@ footer p, a {
     height:0;
     content:".";
     visibility:hidden;
+}
+#happening-now a:hover {
+    text-decoration: underline;
+}
+article {
+    float: left;
+    width: 66.66%;
+    margin-top: 2em;
+    margin-right: 3%
+    padding: 1em;
+}
+article h2 {
+    padding-top: .5em;
+}
+article p {
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+aside {
+    float: right;
+    width: 30.33%;
+    margin-top: 2em;
+    padding: 2em 1em;
+    background-color: #E1BA4F;
+}
+aside p {
+    text-align: left;
+}
+aside h4 {
+    margin-bottom: .5em;
+}
+ul {
+    margin: 2em;
+}
+li {
+    margin-top: 1em;
+    text-align: left;
+}
+li:first-child {
+    margin-top: 0;
 }
 @media only screen and (max-width: 75em) {
     .wrapper {
@@ -446,7 +488,6 @@ footer p, a {
         padding-left: 0;
         margin-left: 36.33%;
     }
-
     form div, form button {
         float: none;
         margin: auto;
