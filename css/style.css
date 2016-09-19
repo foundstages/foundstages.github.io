@@ -97,9 +97,9 @@ h4 {
     height: 25em;	
     padding: 1em;
 }
-#shows section:hover {
+/*#shows section:hover {
     background-color: #E1BA4F;
-}
+}*/
 #shows section img {
     max-width: 600px;
     margin: auto;
