@@ -43,7 +43,7 @@ main {
     background-color: #fff;
 }
 #lander {
-    background-image: url("../images/TheSubject.jpg");
+/*    background-image: url("../images/TheSubject.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
